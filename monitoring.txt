@@ -1,0 +1,9 @@
+### install_monitoring.sh
+```bash
+#!/bin/bash
+# Install Prometheus & Node Exporter on a VM
+sudo apt update -y
+sudo apt install -y prometheus node-exporter
+sudo systemctl enable prometheus node-exporter
+sudo systemctl start prometheus node-exporter
+```
